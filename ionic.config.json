@@ -1,0 +1,8 @@
+{
+  "name": "mwcAssignOneFinal",
+  "app_id": "defab2f0",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
