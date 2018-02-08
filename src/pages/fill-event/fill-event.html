@@ -8,6 +8,11 @@
 
   <ion-navbar>
     <ion-title>fillEvent</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -43,7 +48,20 @@
           <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
         </ion-item>
 
-  
+        <ion-item>
+          <ion-label>Food</ion-label>
+          <ion-checkbox [(ngModel)]="Food"></ion-checkbox>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Games</ion-label>
+          <ion-checkbox [(ngModel)]="Games"></ion-checkbox>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Wi-Fi</ion-label>
+          <ion-checkbox [(ngModel)]="Wi-Fi"></ion-checkbox>
+        </ion-item>
       
       </ion-list>
 
