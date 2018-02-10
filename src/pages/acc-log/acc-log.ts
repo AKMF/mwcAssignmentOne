@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { AccUpPage } from '../acc-up/acc-up';
+import { User } from '../../models/user';
+import { AngularFireAuth } from "angularfire2/auth";
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AccLogPage page.
@@ -19,7 +22,11 @@ export class AccLogPage {
 
   AccUpPage:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {} as User;
+
+  constructor(private afAuth: AngularFireAuth,
+    
+    public navCtrl: NavController, public navParams: NavParams) {
     this.AccUpPage = AccUpPage;
   }
 
@@ -30,5 +37,17 @@ export class AccLogPage {
   // AccUpPage() {
   //   this.navCtrl.setRoot(AccUpPage);
   // }
+
+  async login(user: User) {
+    try {
+    const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+    if(result) {
+      this.navCtrl.setRoot(HomePage);
+    }
+  }
+  catch (e) {
+    console.error(e);
+  }
+  }
 
 }

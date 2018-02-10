@@ -21,16 +21,17 @@
     <p>Event Management</p>
 
     <ion-item>
-        <ion-label color="primary">Inline Label</ion-label>
-        <ion-input placeholder="Username"></ion-input>
+        <ion-label><ion-icon name="person"></ion-icon></ion-label>
+        <!-- <ion-icon name="person"></ion-icon> -->
+        <ion-input placeholder="Email Address" type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label color="primary">Inline Label</ion-label>
-        <ion-input placeholder="Password"></ion-input>
+        <ion-label><ion-icon name="key"></ion-icon></ion-label>
+        <ion-input placeholder="Password" type="password" [(ngModel)]="user.password"></ion-input>
     </ion-item>    
     
-    <button ion-button>Sign In</button>
+    <button ion-button (click)="login(user)">Sign In</button>
     <p>Or</p>
     <button ion-button [navPush]="AccUpPage">Sign Up</button>
     <p>Forget Password?</p>
