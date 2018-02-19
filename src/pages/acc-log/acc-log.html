@@ -6,34 +6,34 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
-    <ion-title>Account</ion-title>
+    <ion-title class="mainTitle">Account</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content>
+<ion-content text-center>
 
-    <p>Atur Darussalam</p>
-    <p>Event Management</p>
+    <p class="mainHeader">Atur Darussalam</p>
+    <p class="mainUnder">Event Management</p>
 
-    <ion-item>
-        <ion-label><ion-icon name="person"></ion-icon></ion-label>
+    <ion-item class="userID">
+        <ion-label><ion-icon name="person" class="logIcon"></ion-icon></ion-label>
         <!-- <ion-icon name="person"></ion-icon> -->
         <ion-input placeholder="Email Address" type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
 
-    <ion-item>
-        <ion-label><ion-icon name="key"></ion-icon></ion-label>
+    <ion-item class="userPass">
+        <ion-label><ion-icon name="key" class="logIcon"></ion-icon></ion-label>
         <ion-input placeholder="Password" type="password" [(ngModel)]="user.password"></ion-input>
     </ion-item>    
     
-    <button ion-button (click)="login(user)">Sign In</button>
-    <p>Or</p>
-    <button ion-button [navPush]="AccUpPage">Sign Up</button>
-    <p>Forget Password?</p>
+    <button ion-button (click)="login(user)" class="signIN">Sign In</button>
+    <p class="plainText">Or</p>
+    <button ion-button [navPush]="AccUpPage" class="signUP">Sign Up</button>
+    <!-- <p class="plainText">Forget Password?</p> -->
 
 </ion-content>

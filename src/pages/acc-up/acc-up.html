@@ -6,29 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>accUp</ion-title>
+  <ion-navbar color="primary">
+    <ion-title class="mainTitle">Sign Up</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content text-center>
 
-    <p>Atur Darussalam</p>
-    <p>Event Management</p>
+    <p class="mainHeader">Atur Darussalam</p>
+    <p class="mainUnder">Event Management</p>
 
-    <ion-item>
+    <ion-item class="userID">
         <ion-label><ion-icon name="person"></ion-icon></ion-label>
         <!-- <ion-icon name="person"></ion-icon> -->
         <ion-input placeholder="Email Address" type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="userPass">
         <ion-label><ion-icon name="key"></ion-icon></ion-label>
-        <ion-input placeholder="Password" type="password" [(ngModel)]="user.password"></ion-input>
+        <ion-input placeholder="Password" type="password" [(ngModel)]="user.password" [attr.minlength]="7"></ion-input>
     </ion-item>
     
-    <button ion-button (click)="signUp(user)">Sign Up</button>
+    <button ion-button (click)="signUp(user)" class="signUP">Sign Up</button>
 
 </ion-content>

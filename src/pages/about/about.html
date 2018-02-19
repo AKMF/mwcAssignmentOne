@@ -1,13 +1,13 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>About</ion-title>
+    <ion-title class="mainTitle">About</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content text-center >
   <!-- <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>
@@ -20,12 +20,14 @@
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>
   </div> -->
-  <p>Atur Darussalam</p>
-  <p>Event Management</p>
-  <p>Version 1.0</p>
-  <p>Ak Muqtadir Firdaus PHM</p>
-  <p>Hj Muhammad Adib Bin Hj Husin</p>
-  <p>Mohammad Nazmi Bin Moss</p>
-  <p>Muhammad Zakwan Bin Zaini</p>
-  <p>2018</p>
+  <p class="mainHeader">Atur Darussalam</p>
+  <p class="mainUnder">Event Management</p>
+  <p class="plainText4">Version 1.0</p>
+  <p class="plainText">2018</p>
+  <p class="plainText2">Developed by:</p>
+  <p class="plainText3">Ak Muqtadir Firdaus PHM</p>
+  <p class="plainText3">Hj Muhammad Adib Bin Hj Husin</p>
+  <p class="plainText3">Mohammad Nazmi Bin Moss</p>
+  <p class="plainText3">Muhammad Zakwan Bin Zaini</p>
+  
 </ion-content>

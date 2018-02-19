@@ -1,3 +1,42 @@
 page-acc-log {
+    .userID{
+        margin-top: 5%;
+        margin-left: 11%;
+        width: 75%;
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0);
+    }
 
+    .userPass{
+        margin-top: 5%;
+        margin-left: 11%;
+        width: 75%;
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .logIcon{
+        color: aliceblue;
+    }
+
+    .signIN{
+        margin-top: 5%;
+        width: 65%;
+        font-size: 20px;
+        margin-bottom: -1.5%;
+
+    }
+
+    .signUP{
+        width: 65%;
+        font-size: 20px;
+        background-color: aliceblue;
+        color: #0066f7;
+        margin-top: -1.5%;
+    }
+
+    .plainText {
+        color: aliceblue;
+        font-size: 18px;
+    }
 }

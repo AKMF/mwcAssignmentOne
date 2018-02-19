@@ -6,10 +6,10 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>fillEvent</ion-title>
+  <ion-navbar color="primary">
+    <ion-title class="mainTitle">Fill In Details</ion-title>
     <ion-buttons end>
-      <button ion-button outline>Save</button>
+      <button ion-button outline (click)="addEventItem(eventList)">Save</button>
     </ion-buttons>
   </ion-navbar>
 
@@ -18,49 +18,71 @@
 
 <ion-content padding>
 
-    <ion-list>
+    <!-- <ion-list>
 
         <ion-item>
           <ion-label stacked>Event Name</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="eventList.eventName"></ion-input>
         </ion-item>
       
         <ion-item>
           <ion-label stacked><ion-icon name="pin"></ion-icon> Address</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="eventList.eventAddress"></ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-label stacked><ion-icon name="calendar"></ion-icon> Start Date</ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
-        </ion-item>
+        
       
-      
-        <ion-item>
-          <ion-label stacked><ion-icon name="calendar"></ion-icon> End Date</ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label stacked><ion-icon name="clock"></ion-icon> Time</ion-label>
-          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
-        </ion-item>
+      </ion-list> -->
 
-        <ion-item>
-          <ion-label>Food</ion-label>
-          <ion-checkbox [(ngModel)]="Food"></ion-checkbox>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label>Games</ion-label>
-          <ion-checkbox [(ngModel)]="Games"></ion-checkbox>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label>Wi-Fi</ion-label>
-          <ion-checkbox [(ngModel)]="Wi-Fi"></ion-checkbox>
-        </ion-item>
-      
-      </ion-list>
+      <ion-list>
+
+          <ion-item class="formPaper">
+            <ion-label stacked color="dark" class="placeHol">Event Name</ion-label>
+            <ion-input type="text" [(ngModel)]="eventList.eventName"></ion-input>
+          </ion-item>
+        
+          <ion-item class="formPaper">
+            <ion-label stacked color="dark" class="placeHol"><ion-icon name="pin"></ion-icon> Address</ion-label>
+            <ion-input type="text" [(ngModel)]="eventList.eventAddress"></ion-input>
+          </ion-item>
+  
+          <ion-item class="formPaper">
+            <ion-label stacked color="dark" class="placeHol"><ion-icon name="calendar"></ion-icon> Start Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="eventList.eventStartDate"></ion-datetime>
+            <!-- <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="eventForm.eventStartDate"></ion-datetime> -->
+          </ion-item>
+        
+        
+          <ion-item class="formPaper">
+            <ion-label stacked color="dark" class="placeHol"><ion-icon name="calendar"></ion-icon> End Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="eventList.eventEndDate"></ion-datetime>
+            <!-- <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="eventList.eventEndDate"></ion-datetime> -->
+          </ion-item>
+        
+          <ion-item class="formPaper">
+            <ion-label stacked color="dark" class="placeHol"><ion-icon name="clock"></ion-icon> Time</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="eventList.eventTime"></ion-datetime>
+            <!-- <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="eventList.eventTime"></ion-datetime> -->
+          </ion-item>
+  
+          <ion-item class="formPaper">
+            <ion-label color="dark" class="placeHol">Food</ion-label>
+            <ion-checkbox [(ngModel)]="eventList.eventFood"></ion-checkbox>
+            <!-- <ion-checkbox [(ngModel)]="eventList.eventFood"></ion-checkbox> -->
+          </ion-item>
+        
+          <ion-item class="formPaper">
+            <ion-label color="dark" class="placeHol">Games</ion-label>
+            <ion-checkbox [(ngModel)]="eventList.eventGames"></ion-checkbox>
+            <!-- <ion-checkbox [(ngModel)]="eventList.eventGames"></ion-checkbox> -->
+          </ion-item>
+        
+          <ion-item class="formPaper">
+            <ion-label color="dark" class="placeHol">Wi-Fi</ion-label>
+            <ion-checkbox [(ngModel)]="eventList.eventWiFi"></ion-checkbox>
+            <!-- <ion-checkbox [(ngModel)]="eventList.eventWiFi"></ion-checkbox> -->
+          </ion-item>
+        
+        </ion-list>
 
 </ion-content>

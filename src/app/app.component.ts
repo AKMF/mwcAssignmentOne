@@ -6,10 +6,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { AccLogPage } from '../pages/acc-log/acc-log';
-import { AccUpPage } from '../pages/acc-up/acc-up';
-import { EventDetailPage } from '../pages/event-detail/event-detail';
-import { FillEventPage } from '../pages/fill-event/fill-event';
-import { PickDatePage } from '../pages/pick-date/pick-date';
 
 @Component({
   templateUrl: 'app.html'

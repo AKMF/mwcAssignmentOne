@@ -1,3 +1,121 @@
 page-event-detail {
 
+        .mainEvent{
+            text-align: center;
+            font-size: 30px;
+            font-family: Philosopher;
+            font-weight: bold;
+            border-bottom: 3px solid rgb(255, 255, 255);
+
+        }
+
+        .mainAddress{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .mainDay{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .boxed{
+            padding:15px;
+            background-color: rgba(255, 255, 255, 0.500);
+        }
+
+        .plainText{
+            text-align: center;
+            font-size: 18px;
+            margin-top: 3%;
+            font-weight: bold;
+        }
+
+        .plainText2{
+            text-align: center;
+            font-size: 18px;
+            // margin-top: 3%;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 35px;
+            background-color: rgba(179, 177, 177, 0.900);
+            display: inline-block;
+        }
+
+        .logIcon {
+            display: inline-block;
+            width: 25%; /* or waterver you need = w1 */
+            vertical-align: top;
+            font-size: 50px;
+            padding: 2%;
+            // color: green;
+            padding-left: 3.5%;
+         }
+
+         .mainAddress, .mainDay {
+            display:inline-block;
+            width: 66%; /* (100-w1)% */
+            vertical-align: top;
+         }
+
+         .justC1 {
+            margin-top: 25px;
+         }
+
+         .justC2 {
+            margin-top: 25px;
+            margin-bottom: 20px;
+         }
+
+         .logIcon2 {
+            display: inline-block;
+            width: 25%; /* or waterver you need = w1 */
+            vertical-align: top;
+            font-size: 60px;
+            // padding: 2%;
+            // color: rgb(49, 49, 49);
+            padding-left: 8%;
+            margin-right: 7%;
+         }
+
+         .logIcon3 {
+            display: inline-block;
+            width: 25%; /* or waterver you need = w1 */
+            vertical-align: top;
+            font-size: 60px;
+            // padding: 2%;
+            // color: rgb(49, 49, 49);
+            padding-left: 24%;
+            margin-right: 8%;
+            margin-top: 25px;
+         }
+
+         .holder{
+             margin-top: -20px;
+             border: 3px solid black;
+             height: 120px;
+             align-items: center;
+             width: 90%;
+             margin-left: 10px;
+         }
+
+         .yes{
+            display: inline-block;
+            width: 25%; /* or waterver you need = w1 */
+            vertical-align: top;
+            font-size: 60px;
+            // padding: 2%;
+            // color: rgb(49, 49, 49);
+            padding-left: 24%;
+            margin-right: 8%;
+            margin-top: 25px;
+         }
+
+         .extra{
+             text-align: center;
+             font-style: italic;
+             font-size: 15px;
+
+         }
+
 }

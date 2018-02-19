@@ -10,13 +10,12 @@ import { AccLogPage } from '../pages/acc-log/acc-log';
 import { AccUpPage } from '../pages/acc-up/acc-up';
 import { EventDetailPage } from '../pages/event-detail/event-detail';
 import { FillEventPage } from '../pages/fill-event/fill-event';
-import { PickDatePage } from '../pages/pick-date/pick-date';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 
 
 @NgModule({
@@ -27,12 +26,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     AccLogPage,
     AccUpPage,
     EventDetailPage,
-    FillEventPage,
-    PickDatePage
+    FillEventPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule,
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
     AngularFireDatabaseModule
@@ -45,8 +44,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     AccLogPage,
     AccUpPage,
     EventDetailPage,
-    FillEventPage,
-    PickDatePage
+    FillEventPage
   ],
   providers: [
     StatusBar,

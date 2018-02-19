@@ -6,13 +6,48 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>eventDetail</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Event</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding text center>
+
+  <ion-card class="boxed" >
+    <!-- <p>{{keyID}}</p> -->
+    <p class="mainEvent">{{nameEvent}}</p>
+    <!-- <br> -->
+    <div class="justC1">
+    <ion-icon name="pin" class="logIcon" color="gps"></ion-icon>
+    <p class="mainAddress">{{addressEvent}}</p>
+    </div>
+    <!-- <p class="mainAddress"><ion-icon name="pin" class="logIcon"></ion-icon>Address of the place</p> -->
+    <!-- <br> -->
+    <div class="justC2">
+    <ion-icon name="calendar" class="logIcon" color="cal"></ion-icon>
+    <p class="mainDay">{{startDateEvent}} untill {{endDateEvent}} <br> {{timeEvent}}</p>
+    </div>
+    <!-- <br> -->
+    <p class="plainText">What to expect?</p>
+    <br>
+    <ion-icon name="restaurant" class="logIcon2" [ngStyle]="{'color': buttonColor}"></ion-icon>
+    <ion-icon name="bicycle" class="logIcon2" [ngStyle]="{'color': buttonColor2}"></ion-icon>
+    <ion-icon name="wifi" class="logIcon2" [ngStyle]="{'color': buttonColor3}"></ion-icon>
+
+    <br>
+    <br>
+    <br>
+    <p class="plainText" class="plainText2">Was the events there</p>
+    <br>
+    <div class="holder">
+    <ion-icon name="checkmark" class="logIcon3" color="yes" (click)="someYes()"></ion-icon>
+    <ion-icon name="close" class="logIcon3" color="danger" (click)="someNo()"></ion-icon>
+    <p class="extra">{{appended}}</p>
+  </div>
+    
+
+  </ion-card>
 
 </ion-content>

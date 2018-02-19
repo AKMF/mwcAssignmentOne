@@ -22,3 +22,63 @@
     *{
     font-family: Abhaya;
     }
+
+    ion-content {
+        background-image: url('../assets/imgs/wall.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @font-face{
+        font-family: Philosopher;
+        src: url('../assets/fonts/hilosopher.woff2') format('woff2');
+        }
+         
+        *{
+        font-family: Abhaya;
+        }
+
+    .navList{
+        background-color: rgba(255, 255, 255, 0.300);
+        font-size: 18px;
+        // font-weight: bold;
+        // font-size: 100px;
+    }
+
+    .mainTitle{
+        font-family: Philosopher;
+        text-transform: uppercase;
+        text-shadow: 0px 2px #505050;
+    }
+
+    .mainHeader{
+        font-family: Philosopher;
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: bold;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        margin-top: 30%;
+
+    }
+
+    .mainUnder{
+        font-family: Abhaya;
+        text-transform: uppercase;
+        background-color: black;
+        font-size: 12px;
+        color: darkgoldenrod;
+        letter-spacing: 9px;
+        width: 80%;
+        margin-top: -1.9%;
+        padding-top: 0%;
+        margin-left: 10%;
+        text-align: center;
+        align-content: center;
+    }
+
+//     .date{
+//     font-weight: bold;
+//     font-size: 100px;
+// }
